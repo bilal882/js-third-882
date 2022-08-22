@@ -1,0 +1,25 @@
+body {
+    /* background: url("https://lukebrown.dev/images/blog/complete-stripe-banner.png") fixed center no-repeat; */
+    background-size: cover;
+    user-select: none;
+}
+
+.bg-blue {
+    background-color: #091970;
+}
+
+.bg {
+    background-color: #091970;
+    border: #091970;
+    color: white;
+}
+
+.bg:hover {
+    background-color: #091970;
+    color: white;
+}
+
+.bg:focus {
+    background-color: #091970;
+    color: white;
+}
