@@ -1,17 +1,26 @@
-let cities = ["Faisalabad", "Lahore", "Karachi", "Sialkot", "Okara", "Islamabad", "Multan"]
+let text = "<p>I love my Country.<br/>I love my City.<br />I love my Homeland.</p > "
 
 function clearFunction() {
     document.getElementById("input").value = ""
 }
 
-function simplrAlert() {
+function lowerCase() {
     document.getElementById("output").innerHTML = "";
-    let value = document.getElementById("input").value;
-    if (!value) {
-        alert("Invalid value")
-    } else {
-        alert(value)
-    }
+    let lowerCaseText = text.toLocaleLowerCase();
+    document.getElementById("output").innerHTML = lowerCaseText;
+}
+
+function upperCase() {
+    document.getElementById("output").innerHTML = "";
+    let lowerCaseText = text.toUpperCase();
+    document.getElementById("output").innerHTML = lowerCaseText;
+}
+
+
+
+function capatalize() {
+    let newText = text.toLocaleLowerCase();
+    document.getElementById("output").innerHTML = "<span  style='text-transform: capitalize;'>" + newText + "</span>"
 }
 
 function printMyName() {
@@ -20,7 +29,7 @@ function printMyName() {
     if (!value) {
         alert("Invalid value")
     } else {
-        alert("Have a Good day" + value + " 🥳")
+        alert("Have a Good day " + value + " 🥳")
         document.getElementById("output").innerHTML = "Have a Good day" + value + " 🥳";
     }
 }

@@ -11,7 +11,7 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles/style.css">
-    <title>14-20 Lectures</title>
+    <title>21-25 Lessons</title>
 </head>
 
 <body>
@@ -19,7 +19,7 @@
     <!-- Header -->
     <nav class="navbar navbar-expand-lg bg-blue navbar-dark">
         <div class="container">
-            <a class="navbar-brand" href="#">14-20 Lectures Assignment</a>
+            <a class="navbar-brand" href="#">21-25 Lectures Assignment</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -31,7 +31,7 @@
                         <a class="nav-link active me-3" href="#">Home</a>
                     </li>
                 </ul>
-            </div> 
+            </div>
         </div>
     </nav>
 
@@ -39,7 +39,7 @@
     <div class="container">
         <div class="row">
             <div class="col p-5">
-                <h4 class="text-center border-bottom border-2 border-dark">14-20</h4>
+                <h4 class="text-center border-bottom border-2 border-dark">21-25</h4>
             </div>
         </div>
     </div>
@@ -52,9 +52,10 @@
                     <h3 class="text-center">Input</h3>
                     <div class="card border border-1 border-dark p-4">
                         <div class="input-group mb-3" style="margin-top: 1.5rem;margin-bottom: 1.5rem;">
-                            <input type="text" class="form-control" placeholder="Enter text"
-                                aria-label="Enter text" aria-describedby="button-addon2" id="input">
-                            <button class="btn btn-outline-dark" type="button" id="button-addon2" onclick="clearFunction()">Clear</button>
+                            <input type="text" class="form-control" placeholder="Enter text" aria-label="Enter text"
+                                aria-describedby="button-addon2" id="input">
+                            <button class="btn btn-outline-dark" type="button" id="button-addon2"
+                                onclick="clearFunction()">Clear</button>
                         </div>
                     </div>
                 </div>
@@ -64,9 +65,9 @@
                     <h3 class="text-center">Original String</h3>
                     <div class="card border border-1 border-dark p-4" style="background-color: #2b2d42;">
                         <p class="text-white text-center"
-                            style="letter-spacing: 1px;margin-top: 1rem;margin-bottom: 1rem;">1)Faisalabad 2)Lahore
-                            3)karachi
-                            4)Sialkot 5)Okara <br> 6)Islamabad 7)Multan</p>
+                            style="letter-spacing: 1px;">I love my Country.<br />I
+                            love my City.<br />
+                            I love my Homeland.</p>
                     </div>
                 </div>
             </div>
@@ -78,23 +79,39 @@
                     <div class="card border border-1 border-dark p-4">
                         <div class="row">
                             <div class="col-12 col-md-6 col-lg-6">
-                                <button class="btn btn-danger w-100 mb-2" onclick="simplrAlert()">Simple Alert</button>
+                                <button class="btn btn-danger w-100 mb-2" onclick="lowerCase()">Convert to lowercase</button>
                             </div>
                             <div class="col-12 col-md-6 col-lg-6">
-                                <button class="btn btn-danger w-100 mb-2" onclick="printMyName()">Print my Name</button>
+                                <button class="btn btn-danger w-100 mb-2" onclick="upperCase()">Convert to Uppercase</button>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-12 col-md-6 col-lg-6">
-                                <button class="btn btn-danger w-100 mb-2" onclick="printAllCities()">Print all Cities</button>
+                                <button class="btn btn-danger w-100 mb-2" onclick="capatalize()">Capatalize</button>
                             </div>
                             <div class="col-12 col-md-6 col-lg-6">
-                                <button class="btn btn-danger w-100 mb-2" onclick="addCity()">Add Your City</button>
+                                <button class="btn btn-danger w-100 mb-2" onclick="addCity()">Better Formating</button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-lg-6">
+                                <button class="btn btn-danger w-100 mb-2" onclick="printAllCities()">Print all cities</button>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-6">
+                                <button class="btn btn-danger w-100 mb-2" onclick="addCity()">Add your city</button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-lg-6">
+                                <button class="btn btn-danger w-100 mb-2" onclick="printAllCities()">Check your city in list</button>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-6">
+                                <button class="btn btn-danger w-100 mb-2" onclick="addCity()">Find this word</button>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-12 col-md-6 col-lg-6 offset-md-3 offset-lg-3">
-                                <button class="btn btn-danger w-100 mb-2" onclick="generateTable()">Generate Table</button>
+                                <button class="btn btn-danger w-100 mb-2" onclick="generateTable()">Replace this word</button>
                             </div>
                         </div>
                     </div>
@@ -103,7 +120,8 @@
             <div class="col-12 col-md-6 col-lg-6">
                 <div class="row ms-1 mb-5">
                     <h3 class="text-center">Output / Result</h3>
-                    <div class="card text-center border border-1 border-dark p-4 mb-2" style="min-height: 190.5px;" id="output">
+                    <div class="card text-center border border-1 border-dark p-4 mb-2" style="min-height: 190.5px;"
+                        id="output">
 
                     </div>
                     <div class="d-flex justify-content-center">
